@@ -28,9 +28,29 @@ UML
 - uso incorreto : utiliza-lo para fazer o código inteiro
 - diagramas :
     - estruturais(estáticos) : diagrama de classe 
-    - comportamentais(dinâmicos) : 
+    - comportamentais(dinâmicos) : escreve aspectos dinâmicos do Software
 
 
+Visibildade
+-privada
+-protected
+-public 
+-default
+
+
+generalização - extends
+realização - implements
+
+
+Troca de mensagens 
+- é feita pelos métodos/função - parâmetros
+
+
+Abstração 
+- uma identidade(conjunto de atributos e métodos) deve ser única dentro do sistema
+
+Polimorfismo 
+-Assinatura do método é igual, mas o corpo é diferente para cada classe
 
 
 - static é utilizado sem ser instanciada

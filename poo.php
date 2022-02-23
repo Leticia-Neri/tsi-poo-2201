@@ -1,39 +1,53 @@
 <?php
 
-interface User{
+interface User {
 
     public function seLogar();
+    public function apagar();
 }
 
 class Usuario implements User{
 
-    private $nome = 'Leticia';
+    protected $nome = 'Letícia';
     private $email;
     private $nasc;
 
-    public static function seLogar(){
-
+    public function seLogar(){
         echo "Logado";
     }
-
-    public function seDesLogar(){
+    public function seDeslogar(){
         echo "Tchau";
     }
-
     public function setNome($val){
-
         $this->nome = $val;
+    }
+    public function getNome(){
+        return $this->nome;
+    }
+    public function apagar(){
+        echo 'apagado';
+    }
+}
+
+class Professor extends Usuario {  
+    public function mudaNome(){
+        $this->nome = 'Lima';
+    }
+}
+
+class Turma{
+    
+    private $professor;
+
+    public function setProfessor(Professor $prof){
+
+        $this->professor = $prof;
 
     }
-
-
 }
-    $leticia = new Usuario;
 
-   // $leticia->seLogar();
-
-    //$leticia->setNome("Raissa");
-
-
-    //static 
-    Usuario::seLogar();
+$leticia = new Professor;
+$leticia->mudaNome();
+echo $leticia->getNome();
+$turma = new Turma;
+$turma->setProfessor($leticia);
