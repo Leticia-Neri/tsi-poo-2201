@@ -41,3 +41,25 @@ Diagrama de estado
 Diagrama de tempo
 - detalha o comportamento dos objetos durante um determinado período de tempo
 - o tempo acontece da esquerda para direita 
+
+
+
+
+
+19:36
+ssh-keygen
+
+19:37
+eval $(ssh-agent)
+
+19:37
+ssh-add ~/.ssh/id_rsa
+
+19:37
+ssh-add ~/.ssh/id_rsa
+
+19:40
+cat /c/Users/luiz.fabmilan/.ssh/id_rsa.pub
+
+19:40
+ssh -T git@bitbucket.org
