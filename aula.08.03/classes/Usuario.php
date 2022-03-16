@@ -11,6 +11,15 @@ class Usuario implements InterfaceCrud, InterfaceUsuario {
     private $senha;
     private $id_perfil;
 
+
+    public function __construct(Produto $objProd = null){
+
+        echo"\nConstrutor da classe Usuario";
+    }
+
+    protected function xpto(){
+        echo"\nMetodo XPTO\n";
+    }
     
     public function setId($val){
         $this->id = $val;
