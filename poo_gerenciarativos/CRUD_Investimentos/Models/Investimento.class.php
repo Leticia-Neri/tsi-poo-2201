@@ -58,7 +58,7 @@ class Investimento extends Model{
    }
 
    function carteiraCliente(int $id_cliente):array{
-      $stmt = $this->prepare("SELECT id,qtd,id_ativo FROM clientes WHERE id_cliente = :id");
+      $stmt = $this->prepare("SELECT id, qtd, id_ativo FROM clientes WHERE id_cliente = :id");
       $stmt->bindParam(':id', $id);
   
 

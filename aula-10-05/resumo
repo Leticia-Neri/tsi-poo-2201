@@ -1,0 +1,19 @@
+Padrão de Projetos
+
+- É uma solução geral para os problemas que ocorrer com frenquencia. Existe diversos 
+- exemplos,factory 
+
+
+
+Principios do Solid 
+objetivo: Tornar o códigoclaro e conciso, tornar o código mais flexível e tolerante a mudanças;
+
+- Single Responsability Principle
+- Open/Closed Principle 
+- Liskov 
+- Interface Segregation Principle
+- Dependency Inversion Principle
+
+Grasp 
+- atribuir responsabilidade a classes e objetos em projeto orientado a objetos.
+- Os diferentes padrões e princípios utilizados no GRASP são: controller (controlador), creator (criador), indirection (indireção), 

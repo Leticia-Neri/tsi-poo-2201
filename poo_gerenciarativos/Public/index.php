@@ -16,8 +16,8 @@ class Main{
     public function listarCliente(){
 
         $clientes = $this->cliente->listar();
-        
-        foreach($cliente as $cliente){
+
+        foreach($cliente as $ind => $cliente){
 
             $carteira = $this->investimento->carteiraCliente($cliente['id']);
             $totalAtivos = 0;
