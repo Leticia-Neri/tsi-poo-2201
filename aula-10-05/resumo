@@ -14,6 +14,6 @@ objetivo: Tornar o códigoclaro e conciso, tornar o código mais flexível e tol
 - Interface Segregation Principle
 - Dependency Inversion Principle
 
-Grasp 
+Principios do Grasp 
 - atribuir responsabilidade a classes e objetos em projeto orientado a objetos.
 - Os diferentes padrões e princípios utilizados no GRASP são: controller (controlador), creator (criador), indirection (indireção), 

@@ -1,0 +1,46 @@
+Resumo - Padrão de Projeto
+
+PRIMEIRO PRINCIPIO - SRP
+
+SEGUNDO PERINCIPIO - OCP (Open-Close)
+- Defende que quando uma nova funcionaidade for necessária, não devemos modificar nosso código existente.
+como atender: fazendo o uso de classes abstratas ou interfaces (sem mexer no código que está funcionando).
+- Quando usar: para compartilhar em redes sociais, quando tem mais de uma meio, ex, enviar por 
+- O conceito de aberto/fechado (OCP) tem a premissa de criarmos novas classes para funcionalidades de tipos semelhantes, e caso tenhamos novas funcionalidades, novas classes sejam criadas.
+
+Padrão de Projeto Strategy
+- interface intermediária.
+- Criar uma Strategy para cada variante e fazer com que o método delegue o algoritmo para uma instância de Strategy.
+- não afeta os outros códigos.
+
+Padrão de projeto Template
+- usa classe abstrata para fazer o mesmo que o strategy.
+- implementção que pode servir para todos.
+
+Princípio LSP (Substituição de Liskov)
+- dec de 80 aparece a primeira linguagem em orientação a objeto.
+- as classes filhas nunca devem quebrar as definições de tipo de classe pai/mãe.
+- ligado a herança.
+- usar polimorfismo para não quebrar uma classe que já está feita(sobrescrever).
+- ter métodos da classe abstrata que não são uteis para sua classe concreta, fere essse princípio.
+
+Princípio de Segregação de Interface (ISP)
+- Nenhum código cliente deve ser forçado a depender de métoos que não usa.
+- ter várias interfaces específicas do que uma genérica.
+- as interfaces pertencem aos seus códigos clientes e não às implementações.
+
+Principio da Inversão de Dependência (DIP)
+- Módulo de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações.
+
+- alto nível:qualquer um depende do outro
+- baixo nível: qualquer um não depende do outro
+
+- modulo de baixo nivel deve ser mais estável que de alto nível
+
+
+
+
+
+
+
+
