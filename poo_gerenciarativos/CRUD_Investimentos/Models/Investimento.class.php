@@ -38,6 +38,7 @@ class Investimento extends Model{
      function apagar(int $id):bool{
        return true;
      }
+
      function listar(int $id = null):?array{
       if($id){
           $stmt = $this->prepare("SELECT id, qtd, id_ativo FROM{$this->tabela} WHERE id = :id");
@@ -57,18 +58,17 @@ class Investimento extends Model{
       return $lista;
    }
 
-   function carteiraCliente(int $id_cliente):array{
-      $stmt = $this->prepare("SELECT id, qtd, id_ativo FROM clientes WHERE id_cliente = :id");
-      $stmt->bindParam(':id', $id);
-  
+   function cliente(int $id_cliente):?array {
+      $stmt = $this->prepare("SELECT id, qtd, id_ativo, id_cliente FROM {$this->tabela} WHERE id_cliente = :id");
 
-   $stmt->execute();
-   $lista =[];
-   while($registro = $stmt->fetch(PDO::FETCH_ASSOC)){
-   $lista[] = $registro;
-  } 
-  return $lista;
+      $stmt->bindParam(':id', $id_cliente);
+      $lista = [];
+      while($registro = $stmt->fetch(PDO::FETCH_ASSOC)){
+         $lista[] = $registro;
+      } 
+        return $lista;
    }
+
 }
 
 $investimento = new Investimento();

@@ -4,36 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Clientes</title>
+    <title>Document</title>
 </head>
 <body>
     <table border='1'>
-        <thead>
+        <thead >
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
-                <th>Total de Ativos</th>
+                <th>Total Ativos</th>
                 <th>Ver Carteira</th>
             </tr>
         </thead>
         <tbody>
-            <?php
-            foreach($clientes as $cliente){
-
-           echo"
-            <tr>
+            <?php foreach($clientes as $cliente){
+                echo "<tr>
                 <td>{$cliente['id']}</td>
                 <td>{$cliente['nome']}</td>
-                <td>{$cliente['totalAtivos']}</td>
-                <td></td>
-            </tr>";
+                <td>{$cliente['total_ativos']}</td>
+                <td><a href='carteira.php?id={$cliente['id']}'>Ver Carteira</a></td>
+                </tr>";
             }
-            ?>        
+            ?>
+
         </tbody>
         <tfoot>
             <tr>
-                <td>Totais</td>
-                <td><?php echo count($clientes) ?></td>
+                <td><?php echo count($clientes)?>Clientes</td>
+                <td></td>
                 <td></td>
                 <td></td>
             </tr>
